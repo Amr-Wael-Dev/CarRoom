@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carroom">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo1_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo1_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarRoom">
+        <activity
+            android:name=".Used_cars"
+            android:exported="true" />
+        <activity
+            android:name=".About"
+            android:exported="true"
+            android:parentActivityName=".Home"
+            />
+
+        <activity
+            android:name=".contact_us"
+            android:exported="true"
+            android:parentActivityName=".Home"
+            />
+        <activity
+            android:name=".toyota"
+            android:exported="true" />
+        <activity
+            android:name=".mercedes"
+            android:exported="true" />
+        <activity
+            android:name=".kia"
+            android:exported="true" />
+        <activity
+            android:name=".car_types"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splach_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
